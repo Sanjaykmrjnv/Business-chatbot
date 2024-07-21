@@ -1,9 +1,13 @@
 from llama_index.core import SimpleDirectoryReader, VectorStoreIndex, Settings
 from llama_index.llms.mistralai import MistralAI
 from llama_index.embeddings.mistralai import MistralAIEmbedding
+import getpass
+import os
+
+
 
 # Initialize MistralAI models
-api_key = "04q0Y5raof4FxtUdk3awrL3Y9AqfJvHj"
+api_key = "Your-Mistral-api-key" #input your mistral api key
 llm = MistralAI(api_key=api_key)
 embed_model = MistralAIEmbedding(model_name="mistral-embed", api_key=api_key)
 
