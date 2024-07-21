@@ -1,7 +1,4 @@
 import fitz
-from llama_index.core import SimpleDirectoryReader, VectorStoreIndex, Settings
-from llama_index.llms.mistralai import MistralAI
-from llama_index.embeddings.mistralai import MistralAIEmbedding
 
 
 # Function to extract text from PDF
